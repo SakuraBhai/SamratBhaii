@@ -1,6 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b10">
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -14,296 +19,527 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1250264980571215');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1250264980571215&ev=PageView&noscript=1"
-/></noscript>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1250264980571215&ev=PageView&noscript=1"/>
+</noscript>
 <!-- End Meta Pixel Code -->
-<Code
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TEAM SAKURA| Join Telegram</title>
+<title>TEAM SAKURA | Official Telegram Community</title>
+<meta name="description" content="Join TEAM SAKURA on Telegram for community updates, insights and support. Free to join.">
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+:root {
+  --bg: #080b10;
+  --panel: #10151d;
+  --panel-light: #151c26;
+  --gold: #e8c77b;
+  --gold-light: #ffebbb;
+  --text: #f5f4ef;
+  --muted: #9ba5b3;
+  --green: #73d6a0;
+  --border: rgba(232,199,123,.19);
 }
 
-body{
-  min-height:100vh;
-  font-family:Arial,Helvetica,sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Inter, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Arial, sans-serif;
+  color: var(--text);
   background:
-    radial-gradient(circle at 50% 0%,#32105f 0%,#170622 38%,#08030e 100%);
-  color:#fff;
-  padding:15px 10px 35px;
+    radial-gradient(ellipse at 50% -10%, #37301d 0%, transparent 44%),
+    radial-gradient(ellipse at 0% 70%, #14221d 0%, transparent 35%),
+    var(--bg);
+  padding: 28px 14px 40px;
+  -webkit-font-smoothing: antialiased;
 }
 
-.wrapper{
-  width:100%;
-  max-width:650px;
-  margin:auto;
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
-.card{
-  position:relative;
-  overflow:hidden;
-  padding:25px 18px 30px;
-  border-radius:30px;
-  border:1px solid rgba(255,193,7,.5);
-  background:rgba(12,5,25,.94);
+.wrapper {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.topline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 18px;
+  color: #b8bdc5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.topline::before,
+.topline::after {
+  content: "";
+  width: 26px;
+  height: 1px;
+  background: var(--gold);
+  opacity: .65;
+}
+
+.card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 30px 28px 25px;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: linear-gradient(
+    145deg,
+    rgba(21,27,36,.98),
+    rgba(10,13,19,.99) 70%
+  );
   box-shadow:
-    0 0 35px rgba(123,42,255,.25),
-    inset 0 0 30px rgba(255,193,7,.03);
+    0 25px 80px rgba(0,0,0,.4),
+    0 0 50px rgba(232,199,123,.045),
+    inset 0 1px 0 rgba(255,255,255,.045);
 }
 
-.card:before{
-  content:"";
-  position:absolute;
-  width:220px;
-  height:220px;
-  background:rgba(116,44,255,.12);
-  filter:blur(70px);
-  top:-100px;
-  left:50%;
-  transform:translateX(-50%);
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -145px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 340px;
+  height: 270px;
+  border-radius: 50%;
+  background: rgba(232,199,123,.12);
+  filter: blur(75px);
+  pointer-events: none;
 }
 
-.badges{
-  position:relative;
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-bottom:25px;
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12%;
+  width: 76%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold),
+    transparent
+  );
+  opacity: .65;
 }
 
-.badge{
-  padding:9px 14px;
-  border-radius:30px;
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:1px;
-  border:1px solid rgba(255,255,255,.18);
+.badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin-bottom: 31px;
 }
 
-.verified{
-  color:#6bea99;
-  background:rgba(35,140,90,.17);
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 12px;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border: 1px solid rgba(255,255,255,.09);
 }
 
-.free{
-  color:#ffd33d;
-  background:rgba(210,125,20,.16);
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 50%;
 }
 
-.logo-area{
-  position:relative;
-  text-align:center;
-  margin-bottom:22px;
+.verified {
+  color: var(--green);
+  background: rgba(65,174,117,.08);
 }
 
-.logo{
-  width:190px;
-  height:105px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:24px;
-  background:radial-gradient(circle,#45206f,#170923 72%);
-  border:1px solid rgba(255,255,255,.08);
-  box-shadow:0 0 35px rgba(116,50,255,.25);
+.verified .badge-dot {
+  background: var(--green);
+  box-shadow: 0 0 9px rgba(115,214,160,.5);
 }
 
-.logo-text{
-  font-size:26px;
-  font-weight:900;
-  letter-spacing:1px;
-  text-shadow:0 0 12px #638dff;
+.free {
+  color: var(--gold-light);
+  background: rgba(232,199,123,.07);
 }
 
-.logo-text span{
-  color:#ffd329;
+.free .badge-dot {
+  background: var(--gold);
 }
 
-h1{
-  position:relative;
-  text-align:center;
-  font-size:34px;
-  line-height:1.2;
-  letter-spacing:1px;
-  margin-bottom:8px;
+.logo-area {
+  text-align: center;
+  margin-bottom: 26px;
 }
 
-.gold{
-  color:#ffd329;
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 116px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 1px solid rgba(232,199,123,.38);
+  background: linear-gradient(145deg,#25271f,#11151a 75%);
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.28),
+    inset 0 0 28px rgba(232,199,123,.055);
 }
 
-.subtitle{
-  position:relative;
-  text-align:center;
-  color:#d4cada;
-  font-size:17px;
-  margin-bottom:10px;
+.logo::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(232,199,123,.16);
+  border-radius: 24px;
 }
 
-.team{
-  position:relative;
-  text-align:center;
-  color:#ddd4e5;
-  font-size:15px;
-  font-weight:bold;
-  margin-bottom:22px;
+.logo-mark {
+  position: relative;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -4px;
+  color: var(--gold-light);
+  text-shadow: 0 0 25px rgba(232,199,123,.16);
 }
 
-.team span{
-  color:#ffd329;
+.logo-mark span {
+  color: #fff;
 }
 
-.join-btn{
-  position:relative;
-  display:block;
-  width:100%;
-  padding:19px 12px;
-  border-radius:50px;
-  text-align:center;
-  text-decoration:none;
-  color:#180b00;
-  font-size:18px;
-  font-weight:900;
-  letter-spacing:1.2px;
-  background:linear-gradient(100deg,#ffe33d,#ff9700);
-  box-shadow:0 8px 25px rgba(255,160,0,.28);
-  transition:.2s;
+.eyebrow {
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
 }
 
-.join-btn:active{
-  transform:scale(.97);
+h1 {
+  text-align: center;
+  font-size: clamp(30px, 7vw, 43px);
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: -1.4px;
+  margin-bottom: 13px;
 }
 
-.countdown{
-  text-align:center;
-  margin:12px 0 20px;
-  color:#aaa0b3;
-  font-size:13px;
+.gold {
+  color: var(--gold);
 }
 
-#seconds{
-  color:#ffd329;
-  font-weight:900;
-  font-size:16px;
+.subtitle {
+  max-width: 390px;
+  margin: 0 auto 13px;
+  text-align: center;
+  color: #c0c5cd;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
-.stats{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  border:1px solid rgba(255,204,60,.3);
-  border-radius:20px;
-  overflow:hidden;
-  margin-bottom:25px;
+.team {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 28px;
 }
 
-.stat{
-  text-align:center;
-  padding:17px 5px;
-  border-right:1px solid rgba(255,204,60,.25);
+.team span {
+  color: var(--gold-light);
+  font-weight: 800;
 }
 
-.stat:last-child{
-  border-right:0;
+.join-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  width: 100%;
+  min-height: 62px;
+  padding: 17px 18px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #17140c;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background: linear-gradient(110deg,#f5dfa0,#d6ad52 55%,#f3d98f);
+  border: 1px solid rgba(255,240,192,.55);
+  box-shadow:
+    0 10px 30px rgba(190,148,58,.15),
+    inset 0 1px 0 rgba(255,255,255,.5);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.stat-title{
-  color:#a89eaf;
-  font-size:11px;
-  font-weight:bold;
-  letter-spacing:1px;
-  margin-bottom:8px;
+.join-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(190,148,58,.25);
 }
 
-.stat-value{
-  color:#fff;
-  font-size:20px;
-  font-weight:900;
+.join-btn:active {
+  transform: scale(.985);
 }
 
-.stat:first-child .stat-value{
-  color:#5ee993;
+.telegram-icon {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
 }
 
-.features{
-  border-radius:22px;
-  padding:5px 17px;
-  background:rgba(30,15,47,.78);
-  border:1px solid rgba(255,255,255,.07);
-  margin-bottom:27px;
+.countdown {
+  text-align: center;
+  margin: 15px 0 27px;
+  color: var(--muted);
+  font-size: 12px;
 }
 
-.feature{
-  display:flex;
-  align-items:flex-start;
-  gap:12px;
-  padding:17px 0;
-  border-bottom:1px solid rgba(255,255,255,.08);
+#seconds {
+  display: inline-block;
+  min-width: 20px;
+  color: var(--gold-light);
+  font-weight: 900;
 }
 
-.feature:last-child{
-  border-bottom:0;
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  margin-bottom: 29px;
+  border: 1px solid rgba(255,255,255,.075);
+  border-radius: 18px;
+  background: rgba(255,255,255,.018);
+  overflow: hidden;
 }
 
-.icon{
-  width:30px;
-  min-width:30px;
-  font-size:23px;
+.stat {
+  padding: 19px 5px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,.075);
 }
 
-.feature-title{
-  color:#ffd329;
-  font-size:17px;
-  font-weight:900;
-  margin-bottom:4px;
+.stat:last-child {
+  border-right: 0;
 }
 
-.feature-text{
-  color:#d0c7d7;
-  font-size:14px;
-  line-height:1.45;
+.stat-title {
+  margin-bottom: 9px;
+  color: #858f9d;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
 }
 
-.note{
-  text-align:center;
-  color:#81768c;
-  font-size:11px;
-  line-height:1.5;
-  margin-top:18px;
+.stat-value {
+  color: var(--gold-light);
+  font-size: 17px;
+  font-weight: 900;
 }
 
-@media(max-width:390px){
+.features-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
 
-  .card{
-    padding:23px 14px 28px;
+.features-heading::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg,var(--border),transparent);
+}
+
+.features-heading span {
+  color: #e5e7eb;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.features {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,.055);
+  border-radius: 16px;
+  background: linear-gradient(
+    115deg,
+    rgba(255,255,255,.035),
+    rgba(255,255,255,.012)
+  );
+  transition: border-color .2s, transform .2s;
+}
+
+.feature:hover {
+  border-color: rgba(232,199,123,.23);
+  transform: translateX(2px);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border: 1px solid rgba(232,199,123,.16);
+  border-radius: 13px;
+  background: rgba(232,199,123,.07);
+  font-size: 21px;
+}
+
+.feature-title {
+  margin: 2px 0 6px;
+  color: #f1d89c;
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.feature-text {
+  color: #a9b1bc;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.bottom-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-top: 19px;
+  color: #9ba5b3;
+  font-size: 11px;
+}
+
+.bottom-label span {
+  color: var(--green);
+}
+
+.note {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.07);
+  color: #707b89;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.footer {
+  padding: 20px 5px 0;
+  text-align: center;
+  color: #6f7782;
+  font-size: 10px;
+  letter-spacing: .5px;
+}
+
+@media (max-width: 420px) {
+  body {
+    padding: 18px 10px 28px;
   }
 
-  h1{
-    font-size:29px;
+  .card {
+    padding: 25px 16px 20px;
+    border-radius: 23px;
   }
 
-  .join-btn{
-    font-size:16px;
+  .badges {
+    gap: 7px;
+    margin-bottom: 27px;
   }
 
-  .feature-title{
-    font-size:16px;
+  .badge {
+    padding: 8px 10px;
+    font-size: 9px;
   }
 
-  .feature-text{
-    font-size:13px;
+  .logo {
+    width: 100px;
+    height: 100px;
   }
 
-  .stat-value{
-    font-size:17px;
+  .logo-mark {
+    font-size: 37px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .join-btn {
+    min-height: 58px;
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+
+  .stat {
+    padding: 16px 3px;
+  }
+
+  .stat-title {
+    font-size: 8px;
+    letter-spacing: .8px;
+  }
+
+  .stat-value {
+    font-size: 15px;
+  }
+
+  .feature {
+    padding: 13px;
+    gap: 11px;
+  }
+
+  .feature-title {
+    font-size: 13px;
+  }
+
+  .feature-text {
+    font-size: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
   }
 }
 </style>
@@ -311,185 +547,240 @@ h1{
 
 <body>
 
-<div class="wrapper">
+<main class="wrapper">
 
-  <div class="card">
+  <div class="topline">The Official Community</div>
 
-    <!-- TOP BADGES -->
+  <section class="card">
+
     <div class="badges">
-      <div class="badge verified">✅ VERIFIED CHANNEL</div>
-      <div class="badge free">👑 FREE TO JOIN</div>
-    </div>
+      <div class="badge verified">
+        <span class="badge-dot"></span>
+        COMMUNITY UPDATES
+      </div>
 
-    <!-- LOGO -->
-    <div class="logo-area">
-      <div class="logo">
-        <div class="logo-text">
-          TEAM <span>SAKURA</span>
-        </div>
+      <div class="badge free">
+        <span class="badge-dot"></span>
+        FREE TO JOIN
       </div>
     </div>
 
-    <!-- TITLE -->
-    <h1>
-      TEAM <span class="gold">SAKURA</span>
-    </h1>
-
-    <div class="subtitle">
-      loss recover
+    <div class="logo-area">
+      <div class="logo">
+        <div class="logo-mark">S<span>K</span></div>
+      </div>
     </div>
+
+    <div class="eyebrow">WELCOME TO</div>
+
+    <h1>TEAM <span class="gold">SAKURA</span></h1>
+
+    <p class="subtitle">
+      Your community for daily updates, shared insights
+      and member support.
+    </p>
 
     <div class="team">
-      By <span>TEAM SAKURA</span>
+      Community by <span>TEAM SAKURA</span>
     </div>
 
-    <!-- MAIN TELEGRAM BUTTON -->
     <a
       class="join-btn"
       href="https://t.me/+QR_--eC0qu84MjM1"
+      id="joinTop"
+      aria-label="Join TEAM SAKURA on Telegram"
     >
+      <svg class="telegram-icon" viewBox="0 0 24 24"
+        fill="currentColor" aria-hidden="true">
+        <path d="M21.7 4.4 18.5 20c-.2 1.1-.8 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.8 8.8-8c.4-.4-.1-.6-.6-.2L6.5 14l-4.6-1.4c-1-.3-1-1 .2-1.5L20 4.2c.8-.3 1.9.2 1.7.2Z"/>
+      </svg>
       JOIN TELEGRAM FREE
+      <span aria-hidden="true">↗</span>
     </a>
 
-    <!-- COUNTDOWN -->
-    <div class="countdown">
-      Redirecting to Telegram in
+    <div class="countdown" id="countdown">
+      Opening Telegram in
       <span id="seconds">10</span>
-      seconds...
+      seconds
     </div>
 
-    <!-- STATS -->
     <div class="stats">
 
       <div class="stat">
-        <div class="stat-title">MEMBERS</div>
-        <div class="stat-value">2,845+</div>
+        <div class="stat-title">COMMUNITY</div>
+        <div class="stat-value">Updates</div>
       </div>
 
       <div class="stat">
         <div class="stat-title">SUPPORT</div>
-        <div class="stat-value">DAILY</div>
+        <div class="stat-value">Daily</div>
       </div>
 
       <div class="stat">
-        <div class="stat-title">JOIN</div>
-        <div class="stat-value">FREE</div>
+        <div class="stat-title">ACCESS</div>
+        <div class="stat-value">Free</div>
       </div>
 
     </div>
 
-    <!-- FEATURES -->
+    <div class="features-heading">
+      <span>WHAT YOU'LL FIND</span>
+    </div>
+
     <div class="features">
 
       <div class="feature">
-        <div class="icon">💰</div>
-
+        <div class="icon">📊</div>
         <div>
-          <div class="feature-title">
-            Daily Salary
-          </div>
-
+          <div class="feature-title">Daily Insights</div>
           <div class="feature-text">
-            NUMBER SURESHOT.
+            Explore community updates and shared information.
+            All insights should be independently evaluated.
           </div>
         </div>
       </div>
-
 
       <div class="feature">
         <div class="icon">📢</div>
-
         <div>
-          <div class="feature-title">
-            Ads Fund Support
-          </div>
-
+          <div class="feature-title">Guidance & Support</div>
           <div class="feature-text">
-            Ads campaign ke liye guidance aur support.
+            Get community guidance, updates and assistance
+            when you need it.
           </div>
         </div>
       </div>
 
-
       <div class="feature">
-        <div class="icon">🚀</div>
-
+        <div class="icon">🤝</div>
         <div>
-          <div class="feature-title">
-            5 yersh colore terding expirens
-          </div>
-
+          <div class="feature-title">Experienced Community</div>
           <div class="feature-text">
-            Ads setup process mein free assistance.
+            Connect with members and learn from shared
+            experiences and discussions.
           </div>
         </div>
       </div>
 
-
       <div class="feature">
-        <div class="icon">🔒</div>
-
+        <div class="icon">🔓</div>
         <div>
-          <div class="feature-title">
-            100% Free Joining
-          </div>
-
+          <div class="feature-title">Free to Join</div>
           <div class="feature-text">
-            Telegram community mein free join karein.
+            Join the Telegram community without a joining fee.
+            Check any separate offers or terms carefully.
           </div>
         </div>
       </div>
 
     </div>
 
-
-    <!-- SECOND TELEGRAM BUTTON -->
     <a
       class="join-btn"
       href="https://t.me/+QR_--eC0qu84MjM1"
+      id="joinBottom"
     >
-      JOIN TELEGRAM FREE
+      <svg class="telegram-icon" viewBox="0 0 24 24"
+        fill="currentColor" aria-hidden="true">
+        <path d="M21.7 4.4 18.5 20c-.2 1.1-.8 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.8 8.8-8c.4-.4-.1-.6-.6-.2L6.5 14l-4.6-1.4c-1-.3-1-1 .2-1.5L20 4.2c.8-.3 1.9.2 1.7.2Z"/>
+      </svg>
+      JOIN TEAM SAKURA
+      <span aria-hidden="true">↗</span>
     </a>
 
-    <div class="note">
-      Please verify all offers, terms and conditions before participating.
+    <div class="bottom-label">
+      <span>●</span> Telegram community access
     </div>
 
-  </div>
+    <div class="note">
+      Participation is voluntary. Verify information, offers
+      and terms independently. No earnings or results are guaranteed.
+    </div>
 
-</div>
+  </section>
 
+  <footer class="footer">
+    © <span id="year"></span> TEAM SAKURA · COMMUNITY PAGE
+  </footer>
+
+</main>
 
 <script>
+(function () {
+  const telegramLink = "https://t.me/+QR_--eC0qu84MjM1";
+  const secondsElement = document.getElementById("seconds");
+  const countdownElement = document.getElementById("countdown");
 
-  // =========================================
-  // TELEGRAM AUTO REDIRECT
-  // =========================================
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
 
-  const telegramLink =
-    "https://t.me/+QR_--eC0qu84MjM1";
+  let seconds = 10;
+  let timer = null;
+  let redirected = false;
 
-  let seconds = 15;
-
-  const counter =
-    document.getElementById("seconds");
-
-  const timer = setInterval(function(){
-
-    seconds--;
-
-    counter.innerText = seconds;
-
-    if(seconds <= 0){
-
+  function stopCountdown() {
+    if (timer !== null) {
       clearInterval(timer);
-
-      window.location.href = telegramLink;
-
+      timer = null;
     }
+  }
 
-  },1000);
+  function redirectToTelegram() {
+    if (redirected) return;
+    redirected = true;
+    stopCountdown();
+    window.location.href = telegramLink;
+  }
 
+  // Allow visitors to cancel the automatic redirect
+  // by interacting with the page.
+  function cancelAutoRedirect() {
+    stopCountdown();
+
+    if (countdownElement) {
+      countdownElement.textContent =
+        "Automatic redirect paused. Use the button to join.";
+    }
+  }
+
+  document.getElementById("joinTop").addEventListener(
+    "click", function (event) {
+      event.preventDefault();
+      redirectToTelegram();
+    }
+  );
+
+  document.getElementById("joinBottom").addEventListener(
+    "click", function (event) {
+      event.preventDefault();
+      redirectToTelegram();
+    }
+  );
+
+  document.addEventListener("click", function (event) {
+    if (
+      event.target.closest("#joinTop") ||
+      event.target.closest("#joinBottom")
+    ) return;
+
+    cancelAutoRedirect();
+  }, { once: true });
+
+  document.addEventListener("keydown", cancelAutoRedirect, {
+    once: true
+  });
+
+  timer = setInterval(function () {
+    seconds--;
+    secondsElement.textContent = seconds;
+
+    if (seconds <= 0) {
+      redirectToTelegram();
+    }
+  }, 1000);
+})();
 </script>
+
 </body>
 </html>
+```
